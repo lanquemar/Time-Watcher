@@ -8,19 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		649CC5EA2030BC2A0006EF3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC5E92030BC2A0006EF3E /* AppDelegate.swift */; };
-		649CC5EC2030BC2A0006EF3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC5EB2030BC2A0006EF3E /* ViewController.swift */; };
 		649CC5EE2030BC2A0006EF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649CC5ED2030BC2A0006EF3E /* Assets.xcassets */; };
 		649CC5F12030BC2A0006EF3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649CC5EF2030BC2A0006EF3E /* Main.storyboard */; };
+		649CC6022030C1910006EF3E /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC6012030C1910006EF3E /* TreeView.swift */; };
+		649CC6042030C7C90006EF3E /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC6032030C7C90006EF3E /* TaskList.swift */; };
+		649CC6062030F0450006EF3E /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC6052030F0450006EF3E /* StatusBarView.swift */; };
+		649CC609203469320006EF3E /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC608203469320006EF3E /* PlayButton.swift */; };
+		649CC60B20346FEB0006EF3E /* TimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC60A20346FEB0006EF3E /* TimeText.swift */; };
+		649CC60D203482240006EF3E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC60C203482240006EF3E /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		649CC5E62030BC2A0006EF3E /* Time Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Watcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649CC5E92030BC2A0006EF3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		649CC5EB2030BC2A0006EF3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		649CC5ED2030BC2A0006EF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		649CC5F02030BC2A0006EF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		649CC5F22030BC2B0006EF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649CC5F32030BC2B0006EF3E /* Time_Watcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Time_Watcher.entitlements; sourceTree = "<group>"; };
+		649CC6012030C1910006EF3E /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		649CC6032030C7C90006EF3E /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		649CC6052030F0450006EF3E /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		649CC608203469320006EF3E /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		649CC60A20346FEB0006EF3E /* TimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeText.swift; sourceTree = "<group>"; };
+		649CC60C203482240006EF3E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +63,51 @@
 		649CC5E82030BC2A0006EF3E /* Time Watcher */ = {
 			isa = PBXGroup;
 			children = (
+				649CC6002030C17E0006EF3E /* Controllers */,
+				649CC5FF2030C1770006EF3E /* Models */,
+				649CC5FE2030C16C0006EF3E /* Views */,
 				649CC5E92030BC2A0006EF3E /* AppDelegate.swift */,
-				649CC5EB2030BC2A0006EF3E /* ViewController.swift */,
 				649CC5ED2030BC2A0006EF3E /* Assets.xcassets */,
 				649CC5EF2030BC2A0006EF3E /* Main.storyboard */,
 				649CC5F22030BC2B0006EF3E /* Info.plist */,
 				649CC5F32030BC2B0006EF3E /* Time_Watcher.entitlements */,
 			);
 			path = "Time Watcher";
+			sourceTree = "<group>";
+		};
+		649CC5FE2030C16C0006EF3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				649CC6072034690C0006EF3E /* Items */,
+				649CC6012030C1910006EF3E /* TreeView.swift */,
+				649CC6052030F0450006EF3E /* StatusBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		649CC5FF2030C1770006EF3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				649CC60C203482240006EF3E /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		649CC6002030C17E0006EF3E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				649CC6032030C7C90006EF3E /* TaskList.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		649CC6072034690C0006EF3E /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				649CC608203469320006EF3E /* PlayButton.swift */,
+				649CC60A20346FEB0006EF3E /* TimeText.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649CC5EC2030BC2A0006EF3E /* ViewController.swift in Sources */,
+				649CC6042030C7C90006EF3E /* TaskList.swift in Sources */,
+				649CC609203469320006EF3E /* PlayButton.swift in Sources */,
+				649CC6022030C1910006EF3E /* TreeView.swift in Sources */,
+				649CC60B20346FEB0006EF3E /* TimeText.swift in Sources */,
+				649CC6062030F0450006EF3E /* StatusBarView.swift in Sources */,
+				649CC60D203482240006EF3E /* Task.swift in Sources */,
 				649CC5EA2030BC2A0006EF3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
