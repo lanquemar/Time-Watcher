@@ -15,12 +15,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     public let statusBar: StatusBarView = StatusBarView();
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let center = DistributedNotificationCenter.default();
+        
+        center.addObserver(self, selector: #selector(AppDelegate.onScreenLock), name: NSNotification.Name(rawValue: "com.apple.screenIsLocked"), object: nil);
+        center.addObserver(self, selector: #selector(AppDelegate.onScreenUnlock), name: NSNotification.Name(rawValue: "com.apple.screenIsUnlocked"), object: nil);
         ConfigManager.loadFile();
         statusBar.ready();
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         ConfigManager.saveFile();
+    }
+    
+    @objc func onScreenLock() {
+        print("onScreenLock");
+    }
+    
+    @objc func onScreenUnlock() {
+        print("onScreenUnlock");
     }
 
 }
