@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Task {
-    public var uuid: String = "";
-    public var name: String = "";
+struct Task: Codable {
+    var uuid: String = "";
+    var name: String = "";
 }

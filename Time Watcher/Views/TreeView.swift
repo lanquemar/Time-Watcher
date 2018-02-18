@@ -36,7 +36,7 @@ class TreeView: NSViewController, NSTableViewDataSource, NSTextFieldDelegate {
     }
     
     func createNewTask(name: String) -> Task {
-        let task = Task();
+        var task = Task();
         
         task.uuid = UUID().uuidString;
         task.name = name;
