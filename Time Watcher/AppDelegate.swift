@@ -13,6 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     public var taskList: TaskList = TaskList();
     public let statusBar: StatusBarView = StatusBarView();
+    public let timeManager: TimeManager = TimeManager();
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let center = DistributedNotificationCenter.default();

@@ -30,7 +30,7 @@ class StatusBarView: NSObject {
     
     public func reloadData() {
         menuBar.removeAllItems();
-        addString(string: "No current task");
+        addCurrentTask();
         addSeparator();
         addPlayButton();
         addTimeText();
@@ -51,6 +51,17 @@ class StatusBarView: NSObject {
     func addString(string: String) {
         let item = NSMenuItem(title: string, action: nil, keyEquivalent: "");
         menuBar.addItem(item);
+    }
+    
+    func addCurrentTask() {
+        let app = NSApplication.shared.delegate as! AppDelegate;
+        let currentTask = app.timeManager.getCurrentTask();
+        
+        if (currentTask != nil) {
+            addString(string: "Current task: " + currentTask!.name);
+        } else {
+            addString(string: "No current task");
+        }
     }
     
     func addTasks() {
@@ -93,7 +104,12 @@ class StatusBarView: NSObject {
     }
     
     @objc func openTask(sender: NSMenuItem) {
+        let app = NSApplication.shared.delegate as! AppDelegate;
         let task = sender.representedObject as! Task;
+        
+        app.timeManager.selectTask(task: task);
+        reloadData();
+        playButton.update();
     }
     
     @objc func openSettings(sender: NSStatusBarButton) {

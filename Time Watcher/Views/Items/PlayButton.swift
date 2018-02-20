@@ -28,13 +28,21 @@ class PlayButton: NSImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func mouseUp(with event: NSEvent) {
-        print("CLICKED")
-        if (self.image == imgPlay) {
+    public func update() {
+        let app = NSApplication.shared.delegate as! AppDelegate;
+        
+        if (app.timeManager.isPlaying()) {
             self.image = imgPause;
         } else {
             self.image = imgPlay;
         }
+    }
+    
+    override func mouseUp(with event: NSEvent) {
+        let app = NSApplication.shared.delegate as! AppDelegate;
+
+        app.timeManager.toggle();
+        update();
     }
 
 }
