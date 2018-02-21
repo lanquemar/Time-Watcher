@@ -21,7 +21,7 @@ class StatusBarView: NSObject {
 
     public func ready() {
         if let button = statusBar.button {
-            button.title = "Time Watcher";
+            button.image = NSImage(named:NSImage.Name("TimeWatcherMenuBar"))
         }
         
         reloadData();
