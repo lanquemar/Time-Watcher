@@ -42,6 +42,8 @@ class StatusBarView: NSObject {
         addQuitButton();
         playButton.frame.size.width = menuBar.size.width;
         timeText.frame.size.width = menuBar.size.width;
+        playButton.update();
+        timeText.updateTime();
     }
     
     func addSeparator() {

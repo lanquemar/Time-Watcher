@@ -26,16 +26,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
+        timeManager.forceStop();
         DataManager.dumpData(timer: nil);
         ConfigManager.saveFile();
     }
     
     @objc func onScreenLock() {
-        print("onScreenLock");
+        print("Screen lock detected!");
+        timeManager.forceStop();
     }
     
     @objc func onScreenUnlock() {
-        print("onScreenUnlock");
+        print("Screen unlock detected!");
+        timeManager.forceStart();
+        statusBar.reloadData();
     }
 
 }

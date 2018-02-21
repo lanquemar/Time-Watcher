@@ -30,9 +30,22 @@ class TimeManager {
     
     private func stopEvent() {
         self.currentEvent?.stop = Int(Date().timeIntervalSince1970);
-        print(self.currentEvent ?? "NaN");
         DataManager.addEvent(event: self.currentEvent!);
         self.currentEvent = nil;
+    }
+    
+    public func forceStart() {
+        if (self.currentTask != nil &&
+            self.currentEvent == nil) {
+            startEvent();
+        }
+    }
+    
+    public func forceStop() {
+        if (self.currentTask != nil &&
+            self.currentEvent != nil) {
+            stopEvent();
+        }
     }
     
     public func toggle() {

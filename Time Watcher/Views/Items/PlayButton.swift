@@ -30,7 +30,7 @@ class PlayButton: NSImageView {
     
     public func update() {
         let app = NSApplication.shared.delegate as! AppDelegate;
-        
+
         if (app.timeManager.isPlaying()) {
             self.image = imgPause;
         } else {
