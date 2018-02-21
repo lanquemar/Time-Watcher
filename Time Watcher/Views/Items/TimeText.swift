@@ -20,6 +20,8 @@ class TimeText: NSView {
         textField.isEditable = false;
         textField.isBordered = false;
         textField.isSelectable = false;
+        textField.isBezeled = false;
+        textField.drawsBackground = false;
         textField.sizeToFit();
         self.addSubview(textField);
         self.frame = textField.frame;
