@@ -48,7 +48,7 @@ class DataManager {
         }
     }
     
-    @objc public static func dumpData(timer: Timer) -> Void {
+    @objc public static func dumpData(timer: Timer?) -> Void {
         if (eventList.count > 0) {
             if var fileList = readLastList() {
                 fileList.append(contentsOf: eventList);

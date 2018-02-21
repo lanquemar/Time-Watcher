@@ -26,6 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
+        DataManager.dumpData(timer: nil);
         ConfigManager.saveFile();
     }
     
