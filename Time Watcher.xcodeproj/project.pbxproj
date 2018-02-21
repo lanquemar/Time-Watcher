@@ -10,6 +10,8 @@
 		647DF73020385F6300EA1005 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DF72F20385F6300EA1005 /* ConfigManager.swift */; };
 		647DF7322039D0AF00EA1005 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DF7312039D0AF00EA1005 /* TimeManager.swift */; };
 		647DF734203C633A00EA1005 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DF733203C633A00EA1005 /* Event.swift */; };
+		647DF736203DA65B00EA1005 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DF735203DA65B00EA1005 /* DataManager.swift */; };
+		647DF73A203DAA8800EA1005 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DF739203DAA8800EA1005 /* FileHelper.swift */; };
 		649CC5EA2030BC2A0006EF3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CC5E92030BC2A0006EF3E /* AppDelegate.swift */; };
 		649CC5EE2030BC2A0006EF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649CC5ED2030BC2A0006EF3E /* Assets.xcassets */; };
 		649CC5F12030BC2A0006EF3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649CC5EF2030BC2A0006EF3E /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		647DF72F20385F6300EA1005 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 		647DF7312039D0AF00EA1005 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		647DF733203C633A00EA1005 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		647DF735203DA65B00EA1005 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		647DF739203DAA8800EA1005 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		649CC5E62030BC2A0006EF3E /* Time Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Watcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649CC5E92030BC2A0006EF3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649CC5ED2030BC2A0006EF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				649CC6032030C7C90006EF3E /* TaskList.swift */,
 				647DF72F20385F6300EA1005 /* ConfigManager.swift */,
 				647DF7312039D0AF00EA1005 /* TimeManager.swift */,
+				647DF735203DA65B00EA1005 /* DataManager.swift */,
+				647DF739203DAA8800EA1005 /* FileHelper.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,8 +209,10 @@
 				649CC6062030F0450006EF3E /* StatusBarView.swift in Sources */,
 				647DF7322039D0AF00EA1005 /* TimeManager.swift in Sources */,
 				649CC60D203482240006EF3E /* Task.swift in Sources */,
+				647DF736203DA65B00EA1005 /* DataManager.swift in Sources */,
 				649CC5EA2030BC2A0006EF3E /* AppDelegate.swift in Sources */,
 				647DF73020385F6300EA1005 /* ConfigManager.swift in Sources */,
+				647DF73A203DAA8800EA1005 /* FileHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

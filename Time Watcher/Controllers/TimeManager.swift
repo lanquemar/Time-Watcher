@@ -14,7 +14,6 @@ class TimeManager {
     public var currentEvent: Event?;
     
     init() {
-        
     }
     
     public func selectTask(task: Task) {
@@ -32,6 +31,7 @@ class TimeManager {
     private func stopEvent() {
         self.currentEvent?.stop = Int(Date().timeIntervalSince1970);
         print(self.currentEvent ?? "NaN");
+        DataManager.addEvent(event: self.currentEvent!);
         self.currentEvent = nil;
     }
     
