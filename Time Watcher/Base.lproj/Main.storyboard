@@ -163,8 +163,8 @@
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hpg-An-ySw">
                                 <rect key="frame" x="386" y="19" width="22" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="6QL-12-CSn"/>
-                                    <constraint firstAttribute="width" constant="22" id="bKs-kw-PZe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="6QL-12-CSn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="bKs-kw-PZe"/>
                                 </constraints>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KcO-Bu-ZKo">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -177,8 +177,8 @@
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YNy-ky-KQE">
                                 <rect key="frame" x="408" y="19" width="22" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="2eh-ic-44l"/>
-                                    <constraint firstAttribute="height" constant="22" id="EIh-hB-s6p"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="2eh-ic-44l"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="EIh-hB-s6p"/>
                                 </constraints>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DMS-4k-iSo">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
